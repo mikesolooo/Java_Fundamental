@@ -3,6 +3,7 @@ package java_20190528;
 public class primeNumberDemo {
 	public static void main(String[] args) {
 		
+		//
 		int pnc=0;
 		
 		for (int a=2;a<=100;a++) {
