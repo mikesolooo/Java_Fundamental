@@ -9,7 +9,7 @@ public class Calendar {
 	public static final int FRIDAY = 5;      
 	public static final int SATURDAY = 6; 
 	
-	public boolean isLeafYear(int year) { 		// boolean 은 true, false 를 저장하는 것이다
+	private boolean isLeafYear(int year) { 		// boolean 은 true, false 를 저장하는 것이다
 		boolean isLeafYear = false;				// 이 코딩은 기본적으로 false를 저장하고 윤년의 조건에 맞으면 true를 반환한다
 		if((year%4==0 && year%100==0 || year%400==0 )) {
 			isLeafYear = true;
@@ -17,7 +17,7 @@ public class Calendar {
 		return isLeafYear;
 	}
 	
-	public int getCount(int year, int month, int day) {
+	private int getCount(int year, int month, int day) {
 		int preYear = year - 1;
 		int preMonth= month - 1;
 		int totalCnt = 0;
@@ -44,7 +44,7 @@ public class Calendar {
 		return totalCnt;
 	}
 	
-	public int getLastDay(int year, int month) {
+	private int getLastDay(int year, int month) {
 		int[] monthArray= {31,28,31,30,31,30,31,31,30,31,30,31};
 		if(isLeafYear(year)) {
 			monthArray[1] = 29;
