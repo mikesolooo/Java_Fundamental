@@ -15,16 +15,23 @@ public class WhileDemo {
 	
 
 // 100까지 홀수합, 짝수합도 해보기
-	
+	// 홀수합
+/*	
 	public static void main(String[] args) {
 		int sum=0;
 		int a = 1;
-		while (a<=100) {
+		while (a<=100 ) {
+				if( a%2==1) {
+					sum+=a;
+				}
+				a++;
 			
 		}
-		
+			System.out.println("1~100 홀수합: "+sum);
 		
 	}
+	*/
+	
 	
 
 // 구구단 while 문으로 해보기
