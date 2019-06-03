@@ -11,6 +11,9 @@ public class ForDemo {
 			}
 		System.out.printf("1부터 " + (i-1) + "까지 홀수의 합은 : " + sum + "입니다.");
 		*/
+		
+		//구구단 2단 2*3까지
+		
 		tt2: for (int j=2;j<=9;j++) {
 			if (j==3) continue;
 			for(int k=1 ; k<=9 ; k++) {
